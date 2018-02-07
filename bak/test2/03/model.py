@@ -33,7 +33,7 @@ web.db.MySQLDB
 #   return data
   # return cur.execute('select * from entries')
   # return db.select('entries', order='id DESC')
-db = web.database(dbn='mysql',port=3306,db="webpython",user="root",pw="root",host='127.0.0.1')
+db = web.print(dbn='mysql',port=3306,db="webpython",user="root",pw="root",host='127.0.0.1')
 def get_posts():
   return db.select('entries')
   # db.select('entries')
